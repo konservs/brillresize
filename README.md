@@ -1,2 +1,2 @@
 # brillresize
-Simple resizing script
+Image resizing library for Joomla
