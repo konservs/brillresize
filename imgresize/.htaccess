@@ -1,0 +1,12 @@
+AddDefaultCharset utf-8
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* /index.php [L,QSA]
+RewriteRule ^$ /index.php [L,QSA]
+
+<ifmodule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault "access plus 30 days"
+</ifmodule>
